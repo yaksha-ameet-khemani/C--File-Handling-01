@@ -1,0 +1,16 @@
+https://ubuntuforums.org/showthread.php?t=2316466
+
+https://github.com/datacratic/curlpp/blob/master/examples/example00.cpp
+
+https://cplusplus.com/forum/unices/14995/
+
+https://stackoverflow.com/questions/43541759/how-to-add-library-curlpp-to-c-project
+
+https://www.cyberciti.biz/faq/how-to-install-curl-command-on-a-ubuntu-linux/
+
+g++ -std=c++11 -I/usr/local/include main.cpp -L/usr/local/lib -lgtest -lpthread -lcurlpp -lcurl -o main
+./main
+
+cmake CMakeLists.txt
+make
+./runTests

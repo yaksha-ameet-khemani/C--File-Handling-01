@@ -84,4 +84,5 @@ int searchText(const char* fileName, string search) {
         cout << search << " not found\n";
         return 0;
     }
+    return 0;
 }

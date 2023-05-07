@@ -67,6 +67,7 @@ TEST(CppFileHandlingProjectTest, ReadDataFalse) {
 }
 
 TEST(CppFileHandlingProjectTest, OpenFileAndAppendDataTrue) {
+    const string data = "\nextra data";
     const int appendData = openFileAndAppendData("test1.txt", data);
     TestUtils t;
     t.yakshaAssert("OpenFileAndAppendDataTrue", appendData == 1 ? true : false, "boundary");    
@@ -74,6 +75,7 @@ TEST(CppFileHandlingProjectTest, OpenFileAndAppendDataTrue) {
 }
 
 TEST(CppFileHandlingProjectTest, OpenFileAndAppendDataFalse) {
+    const string data = "\nextra data";
     const int appendData = isFilePresent("no_file.txt") ? openFileAndAppendData("no_file.txt", data) : 0;
     TestUtils t;
     t.yakshaAssert("OpenFileAndAppendDataFalse", appendData == 1 ? true : false, "boundary");    

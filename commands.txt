@@ -38,4 +38,4 @@ https://ubuntu.pkgs.org/20.04/ubuntu-universe-amd64/nlohmann-json3-dev_3.7.3-1_a
 g++ -std=c++11 -I/usr/local/include main.cpp -L/usr/local/lib -lgtest -lpthread -lcurlpp -lcurl -o main
 ./main
 
-
+https://yaksha-prod-sbfn.azurewebsites.net/api/YakshaMFAEnqueue?code=jSTWTxtQ8kZgQ5FC0oLgoSgZG7UoU9Asnmxgp6hLLvYId/GW9ccoLw==

@@ -19,14 +19,14 @@ TEST(CppFileHandlingProjectTest, CreateFileAndWriteDataTrue) {
     const int dataWritten = createFileAndWriteData("test1.txt", "some sample data");
     const int fileCreated = dataWritten ? readData("test1.txt").length() ? 1 : 0 : 0;
     TestUtils t;
-    t.yakshaAssert("CreateFileAndWriteDataTrue", dataWritten, "boundary");    
+    t.yakshaAssert("CreateFileAndWriteDataTrue", dataWritten, "functional");    
     ASSERT_EQ(1, dataWritten);
 }
 
 TEST(CppFileHandlingProjectTest, SearchTextTrue) {
     const int textPresent = searchText("test1.txt", "string search") ? 1 : 0;
     TestUtils t;
-    t.yakshaAssert("SearchTextTrue", textPresent, "boundary");    
+    t.yakshaAssert("SearchTextTrue", textPresent, "exception");    
     ASSERT_EQ(1, textPresent);
 }
 
@@ -41,6 +41,6 @@ TEST(CppFileHandlingProjectTest, OpenFileAndAppendDataTrue) {
     const string data = "\nextra data";
     const int appendData = openFileAndAppendData("test1.txt", data);
     TestUtils t;
-    t.yakshaAssert("OpenFileAndAppendDataTrue", appendData, "boundary");    
+    t.yakshaAssert("OpenFileAndAppendDataTrue", appendData, "functional");    
     ASSERT_EQ(1, appendData);
 }
